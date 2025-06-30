@@ -1,5 +1,7 @@
 @extends('layouts.base')
 @section('content')
+<form method="post" action="{{ route('todo.store') }}">
+  @csrf
   <div class="row justify-content-center">
     <div class="col-md-8">
       <div class="card">
@@ -22,4 +24,5 @@
       </div>
     </div>
   </div>
+</from>
 @endsection>
